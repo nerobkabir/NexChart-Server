@@ -42,6 +42,7 @@ require("dotenv").config();
 // ====================== BOOTSTRAP ======================
 
 const app    = express();
+app.set("trust proxy", 1);
 const server = http.createServer(app);
 
 
